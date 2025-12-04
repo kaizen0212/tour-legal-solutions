@@ -1,28 +1,29 @@
 import { Phone, Mail, Globe, MapPin } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
+  const { t } = useLanguage();
+
   const contactInfo = [
     {
       icon: Phone,
-      label: "Téléphone",
+      label: t.contact.phone,
       value: "(+33) 07 58 75 45 07",
       href: "tel:+33758754507",
     },
     {
       icon: Mail,
-      label: "Email",
+      label: t.contact.email,
       value: "btbusinessstrategy@gmail.com",
       href: "mailto:btbusinessstrategy@gmail.com",
     },
     {
       icon: Globe,
-      label: "Site Web",
+      label: t.contact.website,
       value: "www.badaratoure.com",
       href: "https://www.badaratoure.com",
     },
   ];
-
-  const locations = ["France", "Afrique de l'Ouest", "UAE"];
 
   return (
     <section id="contact" className="py-24 bg-muted">
@@ -30,14 +31,14 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-secondary tracking-[0.3em] uppercase text-sm font-medium mb-4">
-              Contact
+              {t.contact.label}
             </p>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-8">
-              Travaillons Ensemble
+              {t.contact.title}
             </h2>
             <div className="w-24 h-0.5 bg-secondary mx-auto mb-8" />
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Prêt à sécuriser et développer vos projets ? Contactez-moi pour discuter de vos besoins.
+              {t.contact.description}
             </p>
           </div>
 
@@ -62,10 +63,10 @@ const Contact = () => {
           <div className="bg-primary p-8 md:p-12 text-center">
             <div className="flex items-center justify-center gap-2 mb-6">
               <MapPin className="w-6 h-6 text-secondary" />
-              <span className="text-primary-foreground font-display text-xl">Zones d'intervention</span>
+              <span className="text-primary-foreground font-display text-xl">{t.contact.zonesLabel}</span>
             </div>
             <div className="flex flex-wrap justify-center gap-4">
-              {locations.map((location, index) => (
+              {t.contact.locations.map((location, index) => (
                 <span
                   key={index}
                   className="px-6 py-3 bg-secondary text-secondary-foreground font-semibold tracking-wider uppercase text-sm"

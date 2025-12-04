@@ -1,26 +1,29 @@
 import { MapPin, BookOpen, Users, Award } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Formations = () => {
+  const { t, language } = useLanguage();
+
   const features = [
     {
       icon: BookOpen,
-      title: "Programmes Spécialisés",
-      description: "Formations complètes sur les enjeux juridiques du digital",
+      title: language === "fr" ? "Programmes Spécialisés" : "Specialized Programs",
+      description: language === "fr" ? "Formations complètes sur les enjeux juridiques du digital" : "Complete training on digital legal challenges",
     },
     {
       icon: Users,
-      title: "Public Varié",
-      description: "Entreprises, institutions, juristes et porteurs de projet",
+      title: language === "fr" ? "Public Varié" : "Diverse Audience",
+      description: t.formations.targets.join(", "),
     },
     {
       icon: MapPin,
-      title: "Disponibles à",
-      description: "Dakar et Bamako, avec extension progressive en Afrique francophone",
+      title: t.formations.locationsLabel,
+      description: t.formations.locations.join(", "),
     },
     {
       icon: Award,
-      title: "Expertise Reconnue",
-      description: "RGPD, cybersécurité, conformité des plateformes digitales",
+      title: language === "fr" ? "Expertise Reconnue" : "Recognized Expertise",
+      description: language === "fr" ? "RGPD, cybersécurité, conformité des plateformes digitales" : "GDPR, cybersecurity, digital platform compliance",
     },
   ];
 
@@ -30,29 +33,26 @@ const Formations = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
           <div>
             <p className="text-secondary tracking-[0.3em] uppercase text-sm font-medium mb-4">
-              Formations
+              {t.formations.label}
             </p>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-8">
-              Droit du Numérique
+              {t.formations.title}
             </h2>
             <div className="w-24 h-0.5 bg-secondary mb-8" />
             
             <p className="text-foreground/80 text-lg leading-relaxed mb-8">
-              Je propose des programmes de formation spécialisés destinés aux entreprises, 
-              institutions, juristes et porteurs de projet souhaitant maîtriser les enjeux 
-              juridiques du digital.
+              {t.formations.description}
             </p>
             
             <p className="text-foreground/80 text-lg leading-relaxed mb-8">
-              Ces formations sont actuellement disponibles à Dakar et à Bamako, et sont 
-              appelées à se développer progressivement dans l'ensemble de l'Afrique francophone.
+              {t.formations.availability}
             </p>
             
             <a
               href="#contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:bg-secondary hover:text-secondary-foreground transition-all duration-300"
             >
-              Demander le programme
+              {language === "fr" ? "Demander le programme" : "Request program"}
             </a>
           </div>
 
