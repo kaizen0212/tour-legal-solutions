@@ -143,7 +143,7 @@ const Packs = () => {
                   onClick={() => setSelectedPack(null)}
                   className="inline-flex items-center justify-center w-full px-8 py-4 bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:bg-secondary hover:text-secondary-foreground transition-all duration-300"
                 >
-                  Demander ce pack
+                  Réserver un appel
                 </a>
               </div>
             </div>
