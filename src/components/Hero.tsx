@@ -65,7 +65,7 @@ const Hero = () => {
           {/* Vision Text */}
           <div className="text-primary-foreground space-y-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-secondary">
-              B.T. Business & Strategy
+              B.T. Business <span className="font-body">&</span> Strategy
             </h2>
             <div className="w-20 h-0.5 bg-secondary" />
             <p className="text-primary-foreground/90 text-xl md:text-2xl leading-relaxed font-body">
