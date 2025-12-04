@@ -14,21 +14,21 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Text Content */}
           <div className="text-primary-foreground space-y-8 animate-fade-in">
-            <div className="space-y-2">
-              <p className="text-secondary tracking-[0.3em] uppercase text-sm font-medium">
-                {t.hero.subtitle}
-              </p>
+            <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
                 Badara Alou
                 <span className="block text-secondary">Touré</span>
               </h1>
+              <p className="text-secondary tracking-[0.3em] uppercase text-sm font-medium">
+                {t.hero.subtitle}
+              </p>
+              <p className="text-secondary tracking-[0.3em] uppercase text-sm font-medium">
+                {t.hero.tagline}
+              </p>
             </div>
             
             <div className="w-24 h-0.5 bg-secondary" />
             
-            <p className="text-xl md:text-2xl text-primary-foreground/80 font-light leading-relaxed max-w-xl">
-              {t.hero.tagline}
-            </p>
             
             <p className="text-primary-foreground/70 text-lg">
               {t.hero.locations}
