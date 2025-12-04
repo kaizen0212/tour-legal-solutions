@@ -1,11 +1,18 @@
-import { Target, TrendingUp, Shield, Lightbulb } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Mission = () => {
-  const roles = [
+  const { t, language } = useLanguage();
+
+  const roles = language === "fr" ? [
     "Accompagner les entreprises et indépendants dans la mise en œuvre de projets stratégiques et opérationnels",
     "Assurer une veille réglementaire et fournir des solutions adaptées aux besoins spécifiques de chaque client",
     "Faciliter l'internationalisation des entreprises, en particulier en Afrique de l'Ouest et à Dubaï",
     "Collaborer avec des experts juridiques locaux pour garantir la conformité légale et réglementaire des projets",
+  ] : [
+    "Support companies and freelancers in implementing strategic and operational projects",
+    "Ensure regulatory monitoring and provide solutions tailored to each client's specific needs",
+    "Facilitate business internationalization, particularly in West Africa and Dubai",
+    "Collaborate with local legal experts to ensure legal and regulatory compliance of projects",
   ];
 
   return (
@@ -16,17 +23,15 @@ const Mission = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-secondary tracking-[0.3em] uppercase text-sm font-medium mb-4">
-            Ma Mission
+            {t.mission.label}
           </p>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-8">
-            Mon Rôle
+            {language === "fr" ? "Mon Rôle" : "My Role"}
           </h2>
           <div className="w-24 h-0.5 bg-secondary mx-auto mb-12" />
           
           <p className="text-primary-foreground/80 text-xl leading-relaxed mb-12 max-w-3xl mx-auto">
-            Offrir un accompagnement stratégique, opérationnel et juridique permettant aux organisations 
-            de sécuriser leurs activités, de gagner en performance et de saisir les opportunités liées 
-            à l'innovation et à la transformation numérique.
+            {t.mission.description}
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 text-left">

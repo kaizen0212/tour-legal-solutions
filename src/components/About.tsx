@@ -1,21 +1,24 @@
 import { GraduationCap, Globe, Briefcase } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
+
   const highlights = [
     {
       icon: GraduationCap,
-      title: "Formation",
-      description: "Master 2 Droit des Affaires, MBA, Spécialisation Droit du Numérique",
+      title: t.about.highlights.formation.title,
+      description: t.about.highlights.formation.description,
     },
     {
       icon: Globe,
-      title: "International",
-      description: "France, Bamako, Dakar, Émirats Arabes Unis",
+      title: t.about.highlights.international.title,
+      description: t.about.highlights.international.description,
     },
     {
       icon: Briefcase,
-      title: "Expérience",
-      description: "+4 ans de conseil en stratégie et ingénierie juridique",
+      title: t.about.highlights.experience.title,
+      description: t.about.highlights.experience.description,
     },
   ];
 
@@ -25,24 +28,17 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-secondary tracking-[0.3em] uppercase text-sm font-medium mb-4">
-              À Propos
+              {t.about.label}
             </p>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-8">
-              Votre Partenaire Juridique
+              {t.about.title}
             </h2>
             <div className="w-24 h-0.5 bg-secondary mx-auto" />
           </div>
 
           <div className="prose prose-lg max-w-none text-foreground/80 text-center mb-16 text-xl leading-relaxed">
-            <p>
-              Titulaire d'un Master 2 en Droit des Affaires et en Management Business & Administration, 
-              complété par une spécialisation en Droit du Numérique, j'accompagne les entreprises et 
-              entrepreneurs dans la sécurisation et le développement de leurs projets en France et à l'international.
-            </p>
-            <p className="mt-6">
-              Depuis plus de 4 ans, j'interviens en tant que consultant en stratégie et en ingénierie 
-              juridique auprès d'acteurs basés en France, à Bamako, à Dakar, ainsi qu'aux Émirats arabes unis.
-            </p>
+            <p>{t.about.description1}</p>
+            <p className="mt-6">{t.about.description2}</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">

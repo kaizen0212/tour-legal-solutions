@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 import logo from "@/assets/logo.jpg";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,11 +18,11 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { href: "#about", label: "À Propos" },
-    { href: "#expertise", label: "Expertises" },
-    { href: "#packs", label: "Nos Packs" },
-    { href: "#formations", label: "Formations" },
-    { href: "#contact", label: "Contact" },
+    { href: "#about", label: t.nav.about },
+    { href: "#expertise", label: t.nav.expertise },
+    { href: "#packs", label: t.nav.packs },
+    { href: "#formations", label: t.nav.formations },
+    { href: "#contact", label: t.nav.contact },
   ];
 
   return (
@@ -47,15 +50,19 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-primary-foreground"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center gap-4">
+            <LanguageSwitcher />
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-primary-foreground"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

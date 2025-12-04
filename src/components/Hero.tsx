@@ -1,6 +1,9 @@
+import { useLanguage } from "@/contexts/LanguageContext";
 import portrait from "@/assets/portrait.jpg";
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="min-h-screen bg-primary relative overflow-hidden">
       {/* Decorative elements */}
@@ -13,7 +16,7 @@ const Hero = () => {
           <div className="text-primary-foreground space-y-8 animate-fade-in">
             <div className="space-y-2">
               <p className="text-secondary tracking-[0.3em] uppercase text-sm font-medium">
-                Consultant en Développement
+                {t.hero.subtitle}
               </p>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
                 Badara Alou
@@ -24,11 +27,11 @@ const Hero = () => {
             <div className="w-24 h-0.5 bg-secondary" />
             
             <p className="text-xl md:text-2xl text-primary-foreground/80 font-light leading-relaxed max-w-xl">
-              Stratégique & Juridique
+              {t.hero.tagline}
             </p>
             
             <p className="text-primary-foreground/70 text-lg">
-              France | Afrique de l'Ouest | UAE
+              {t.hero.locations}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -36,13 +39,13 @@ const Hero = () => {
                 href="#contact"
                 className="inline-flex items-center justify-center px-8 py-4 bg-secondary text-secondary-foreground font-semibold tracking-wider uppercase text-sm hover:bg-secondary/90 transition-all duration-300 hover:shadow-gold"
               >
-                Me Contacter
+                {t.hero.contactBtn}
               </a>
               <a
                 href="#expertise"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-secondary text-secondary font-semibold tracking-wider uppercase text-sm hover:bg-secondary hover:text-secondary-foreground transition-all duration-300"
               >
-                Mes Services
+                {t.hero.servicesBtn}
               </a>
             </div>
           </div>
