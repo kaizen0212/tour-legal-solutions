@@ -1,16 +1,28 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import portrait from "@/assets/portrait.jpg";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="min-h-screen bg-primary relative overflow-hidden">
+    <section className="min-h-screen relative overflow-hidden">
+      {/* Background image with zoom animation */}
+      <div className="absolute inset-0">
+        <img
+          src={heroBg}
+          alt=""
+          className="w-full h-full object-cover animate-slow-zoom"
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-primary/80" />
+      </div>
+
       {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-1/3 h-full bg-secondary/10" />
-      <div className="absolute top-1/4 left-8 w-2 h-32 bg-secondary" />
+      <div className="absolute top-0 left-0 w-1/3 h-full bg-secondary/5 z-10" />
+      <div className="absolute top-1/4 left-8 w-2 h-32 bg-secondary z-10" />
       
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+      <div className="container mx-auto px-6 pt-32 pb-20 relative z-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Portrait + Name */}
           <div className="text-primary-foreground space-y-8 animate-fade-in">
