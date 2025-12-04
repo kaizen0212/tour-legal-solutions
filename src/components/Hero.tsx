@@ -68,10 +68,10 @@ const Hero = () => {
               B.T. Business & Strategy
             </h2>
             <div className="w-20 h-0.5 bg-secondary" />
-            <p className="text-primary-foreground/90 text-xl md:text-2xl leading-relaxed">
+            <p className="text-primary-foreground/90 text-xl md:text-2xl leading-relaxed font-body">
               {t.hero.vision1}
             </p>
-            <p className="text-primary-foreground/80 text-xl md:text-2xl leading-relaxed">
+            <p className="text-primary-foreground/80 text-xl md:text-2xl leading-relaxed font-body">
               {t.hero.vision2}
             </p>
           </div>
