@@ -63,15 +63,15 @@ const Hero = () => {
           </div>
 
           {/* Vision Text */}
-          <div className="text-primary-foreground space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary">
+          <div className="text-primary-foreground space-y-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-secondary">
               B.T. Business & Strategy
             </h2>
-            <div className="w-16 h-0.5 bg-secondary" />
-            <p className="text-primary-foreground/90 text-lg leading-relaxed">
+            <div className="w-20 h-0.5 bg-secondary" />
+            <p className="text-primary-foreground/90 text-xl md:text-2xl leading-relaxed">
               {t.hero.vision1}
             </p>
-            <p className="text-primary-foreground/80 text-lg leading-relaxed">
+            <p className="text-primary-foreground/80 text-xl md:text-2xl leading-relaxed">
               {t.hero.vision2}
             </p>
           </div>
