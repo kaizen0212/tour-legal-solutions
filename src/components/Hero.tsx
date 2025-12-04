@@ -12,8 +12,21 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
-          {/* Text Content */}
+          {/* Portrait + Name */}
           <div className="text-primary-foreground space-y-8 animate-fade-in">
+            {/* Portrait above name */}
+            <div className="relative flex justify-center lg:justify-start">
+              <div className="relative">
+                <div className="absolute -inset-4 border-2 border-secondary/30 -z-10" />
+                <div className="absolute -bottom-6 -right-6 w-full h-full bg-secondary/20 -z-20" />
+                <img
+                  src={portrait}
+                  alt="Badara Alou Touré"
+                  className="w-64 md:w-80 h-auto object-cover shadow-2xl"
+                />
+              </div>
+            </div>
+            
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
                 Badara Alou
@@ -28,7 +41,6 @@ const Hero = () => {
             </div>
             
             <div className="w-24 h-0.5 bg-secondary" />
-            
             
             <p className="text-primary-foreground/70 text-lg">
               {t.hero.locations}
@@ -50,17 +62,18 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Portrait */}
-          <div className="relative flex justify-center lg:justify-end" style={{ animationDelay: "0.2s" }}>
-            <div className="relative">
-              <div className="absolute -inset-4 border-2 border-secondary/30 -z-10" />
-              <div className="absolute -bottom-6 -right-6 w-full h-full bg-secondary/20 -z-20" />
-              <img
-                src={portrait}
-                alt="Badara Alou Touré"
-                className="w-80 md:w-96 h-auto object-cover shadow-2xl"
-              />
-            </div>
+          {/* Vision Text */}
+          <div className="text-primary-foreground space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary">
+              B.T. Business & Strategy
+            </h2>
+            <div className="w-16 h-0.5 bg-secondary" />
+            <p className="text-primary-foreground/90 text-lg leading-relaxed">
+              {t.hero.vision1}
+            </p>
+            <p className="text-primary-foreground/80 text-lg leading-relaxed">
+              {t.hero.vision2}
+            </p>
           </div>
         </div>
       </div>
