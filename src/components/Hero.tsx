@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-1/3 h-full bg-secondary/5 z-10" />
+      <div className="absolute top-0 left-0 w-1/2 h-full bg-primary/40 z-10" />
       <div className="absolute top-1/4 left-8 w-2 h-32 bg-secondary z-10" />
       
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-20">
