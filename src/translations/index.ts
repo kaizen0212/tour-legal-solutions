@@ -13,6 +13,8 @@ export const translations = {
       locations: "France | Afrique de l'Ouest | UAE",
       contactBtn: "Me Contacter",
       servicesBtn: "Mes Services",
+      vision1: "B.T. Business & Strategy ambitionne de devenir un acteur de référence dans l'accompagnement stratégique des entreprises en France, en Afrique de l'Ouest et aux Émirats arabes unis.",
+      vision2: "Notre vision : offrir un accès simple et fiable à une expertise juridique et stratégique, adaptée aux réalités économiques de chaque territoire. Nous œuvrons également à créer des passerelles durables entre les écosystèmes du Nord et du Sud, afin de favoriser les collaborations, la croissance et l'innovation dans un monde en pleine transformation.",
     },
     about: {
       label: "À Propos",
@@ -156,6 +158,8 @@ export const translations = {
       locations: "France | West Africa | UAE",
       contactBtn: "Contact Me",
       servicesBtn: "My Services",
+      vision1: "B.T. Business & Strategy aims to become a leading player in strategic business support in France, West Africa, and the United Arab Emirates.",
+      vision2: "Our vision: to provide simple and reliable access to legal and strategic expertise, adapted to the economic realities of each territory. We also work to create lasting bridges between Northern and Southern ecosystems, to foster collaboration, growth, and innovation in a rapidly changing world.",
     },
     about: {
       label: "About",
