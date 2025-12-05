@@ -1,10 +1,10 @@
-import { Building, Shield, FileText, Users, Lock, Globe, Cpu, Scale, Briefcase } from "lucide-react";
+import { Building, Shield, FileText, Users, Lock, Globe, Cpu, Scale, Briefcase, Pickaxe, Search, Building2, Handshake, TrendingUp } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Expertise = () => {
   const { t } = useLanguage();
 
-  const businessIcons = [Building, FileText, Scale, Users];
+  const businessIcons = [Building, FileText, Scale, Users, Pickaxe, Search, Building2, Handshake, TrendingUp];
   const digitalIcons = [Lock, Shield, Globe, Cpu];
 
   return (
