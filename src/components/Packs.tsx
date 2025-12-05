@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Rocket, Calendar, FileCheck, X } from "lucide-react";
+import { Rocket, Calendar, FileCheck, FileText, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 interface Pack {
-  id: "express" | "serenite" | "pro";
+  id: "express" | "serenite" | "pro" | "simple";
   icon: React.ElementType;
 }
 
@@ -11,6 +11,7 @@ const packsMeta: Pack[] = [
   { id: "express", icon: Rocket },
   { id: "serenite", icon: Calendar },
   { id: "pro", icon: FileCheck },
+  { id: "simple", icon: FileText },
 ];
 
 const Packs = () => {
