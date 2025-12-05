@@ -60,7 +60,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
-                href="https://calendly.com/infomasterclass-op/30min"
+                href="https://calendly.com/badraalou-toure/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 bg-secondary text-secondary-foreground font-semibold tracking-wider uppercase text-sm hover:bg-secondary/90 transition-all duration-300 hover:shadow-gold"

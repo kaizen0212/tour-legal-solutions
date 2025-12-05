@@ -110,7 +110,7 @@ const Packs = () => {
               
               <div className="mt-8 pt-6 border-t border-border">
                 <a
-                  href="https://calendly.com/infomasterclass-op/30min"
+                  href="https://calendly.com/badraalou-toure/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full px-8 py-4 bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:bg-secondary hover:text-secondary-foreground transition-all duration-300"
