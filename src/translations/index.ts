@@ -107,6 +107,17 @@ export const translations = {
             "Conseils personnalisés pour chaque contrat",
           ],
         },
+        simple: {
+          title: "Pack Contrat Simple",
+          subtitle: "L'essentiel juridique",
+          description: "Pour ceux qui ont besoin d'un contrat unique, clair et sécurisé, sans engagement mensuel.",
+          content: [
+            "Rédaction ou révision d'un contrat au choix",
+            "Analyse de vos besoins spécifiques",
+            "Livraison rapide sous 48-72h",
+            "1 session de questions/réponses de 15 minutes",
+          ],
+        },
       },
     },
     formations: {
@@ -259,6 +270,17 @@ export const translations = {
           content: [
             "Drafting or revision of 3 contracts of your choice (client contract, service provider, confidentiality, partnership)",
             "Personalized advice for each contract",
+          ],
+        },
+        simple: {
+          title: "Simple Contract Pack",
+          subtitle: "Legal essentials",
+          description: "For those who need a single, clear and secure contract, without monthly commitment.",
+          content: [
+            "Drafting or revision of one contract of your choice",
+            "Analysis of your specific needs",
+            "Fast delivery within 48-72h",
+            "1 Q&A session of 15 minutes",
           ],
         },
       },
