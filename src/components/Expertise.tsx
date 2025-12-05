@@ -82,7 +82,12 @@ const Expertise = () => {
                 <Target className="w-6 h-6 text-secondary-foreground" />
               </div>
               <h3 className="text-xl font-display font-bold text-primary-foreground">
-                {t.expertise.strategicConsulting.title}
+                {t.expertise.strategicConsulting.title.split('&').map((part, i, arr) => (
+                  <span key={i}>
+                    {part}
+                    {i < arr.length - 1 && <span className="font-normal">&</span>}
+                  </span>
+                ))}
               </h3>
             </div>
             <ul className="space-y-5">
