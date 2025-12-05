@@ -85,7 +85,7 @@ const Expertise = () => {
                 {t.expertise.strategicConsulting.title.split('&').map((part, i, arr) => (
                   <span key={i}>
                     {part}
-                    {i < arr.length - 1 && <span className="font-normal">&</span>}
+                    {i < arr.length - 1 && <span className="font-sans font-normal italic">&</span>}
                   </span>
                 ))}
               </h3>
