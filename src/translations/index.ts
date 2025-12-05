@@ -46,6 +46,11 @@ export const translations = {
           "Rédaction et analyse contractuelle",
           "Gouvernance et conformité",
           "Accompagnement des opérations commerciales et partenariales",
+          "Droit minier & stratégie d'implantation",
+          "Due diligence & audit juridique",
+          "Installation et structuration des sociétés",
+          "Contrats & gouvernance",
+          "Levée de fonds & préparation investisseurs",
         ],
       },
       digitalLaw: {
@@ -191,6 +196,11 @@ export const translations = {
           "Contract drafting and analysis",
           "Governance and compliance",
           "Support for commercial and partnership operations",
+          "Mining law & establishment strategy",
+          "Due diligence & legal audit",
+          "Company setup and structuring",
+          "Contracts & governance",
+          "Fundraising & investor preparation",
         ],
       },
       digitalLaw: {
