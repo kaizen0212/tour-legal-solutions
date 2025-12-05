@@ -58,9 +58,8 @@ export const translations = {
         ],
       },
       strategicConsulting: {
-        title: "Conseil Stratégique",
+        title: "Droit Minier & Stratégie d'Implantation",
         items: [
-          "Droit minier & stratégie d'implantation",
           "Due diligence & audit juridique",
           "Installation et structuration des sociétés",
           "Contrats & gouvernance",
@@ -213,9 +212,8 @@ export const translations = {
         ],
       },
       strategicConsulting: {
-        title: "Strategic Consulting",
+        title: "Mining Law & Establishment Strategy",
         items: [
-          "Mining law & establishment strategy",
           "Due diligence & legal audit",
           "Company setup and structuring",
           "Contracts & governance",
